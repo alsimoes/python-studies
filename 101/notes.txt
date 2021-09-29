@@ -1,0 +1,2 @@
+- Install geckodriver (manjaro: sudo pacman -Ss geckodriver)
+- Requests2 nao foi utilizado
