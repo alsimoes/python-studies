@@ -47,7 +47,7 @@ def buildrank(type):
 
 
 option = Options()
-option.headless = True
+option.headless = False
 driver = webdriver.Firefox(options=option)
 logging.debug("Firefox initialized.")
 
