@@ -131,7 +131,9 @@ dmypy.json
 # Customizable ignores can be placed here
 
 .code-workspace
-102/django/
-102/.idea/
-102/django-tutorial.code-workspace
-101/nba/
+django/
+.idea/
+*.code-workspace
+nba/
+pygame/
+.vscode/
