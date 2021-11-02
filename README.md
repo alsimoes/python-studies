@@ -1,6 +1,6 @@
 Python-studies
 ==============
-[Python-studies](https://github.com/alsimoes/python-studies) are a collection of little projects to play and exercise my [python](https://www.python.org/). There are no fixed objective besides target of each projet.
+[Python-studies](https://github.com/alsimoes/python-studies) are a collection of little projects to play and exercise my [python](https://www.python.org/) skills. There are no fixed objective besides target of each projet.
 
 \
 Projects
