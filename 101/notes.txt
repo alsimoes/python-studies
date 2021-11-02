@@ -1,2 +1,18 @@
 - Install geckodriver (manjaro: sudo pacman -Ss geckodriver)
 - Requests2 nao foi utilizado
+
+:: Make env works on Windows 10 (PowerShell)
+-- ON NORMAL TERMINAL
+Get-ExecutionPolicy
+
+
+-- ON ADMIN TERMINAL
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+Get-ExecutionPolicy -List
+
+-- ON NORMAL TERMINAL
+Get-ExecutionPolicy
+Unblock-File -Path .\nba-env\Scripts\Activate.ps1
+Get-ExecutionPolicy
+
