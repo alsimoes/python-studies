@@ -1,8 +1,7 @@
 import db
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Session
 
-Session = sessionmaker(bind=db.engine)
-session = Session()
+session = Session(db.engine)
 
 for s in session.query(db.transactions).all():
     print(s.transaction_id, s.price)

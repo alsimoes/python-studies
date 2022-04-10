@@ -1,9 +1,8 @@
 import db
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import Session
 import random
 
-Session = sessionmaker(bind=db.engine)
-session = Session()
+session = Session(db.engine)
 
 for t in range(11,20):
     item_id = random.randint(0,1000)
