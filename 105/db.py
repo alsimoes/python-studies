@@ -1,22 +1,33 @@
-from sqlalchemy import create_engine, Column, String, Integer
+from importlib.metadata import metadata
+from sqlalchemy import create_engine, Column, String, Integer, Table
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import registry
+from dataclasses import dataclass, field
+# from typing import Optional
 
 engine = create_engine('sqlite:///105.sqllite', echo=True)
 base = declarative_base()
 
-class transactions(base):
+mapper_registry = registry()
+
+@mapper_registry.mapped
+@dataclass
+class transactions:
     
-    __tablename__ = 'transactions'
+    __table__ = Table (
+        'transactions',
+        mapper_registry.metadata,
+        Column("id", Integer, primary_key=True),
+        Column("date", String),
+        Column("item_id", Integer),
+        Column("price", Integer)
+    )
 
-    transaction_id = Column(Integer, primary_key=True)
-    date = Column(String)
-    item_id = Column(Integer)
-    price = Column(Integer)
+    id: int = field(init=False)
+    date: str
+    item_id: int
+    price: int
+    # price: Optional[int] = None
 
-    def __init__(self, transaction_id, date, item_id, price):
-        self.transaction_id = transaction_id
-        self.date = date
-        self.item_id = item_id
-        self.price = price
 
 base.metadata.create_all(engine)
