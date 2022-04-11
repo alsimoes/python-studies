@@ -12,4 +12,4 @@ Project | Description | Status
 [102](https://github.com/alsimoes/python-studies/tree/main/102) | The [Django tutorial](https://docs.djangoproject.com/pt-br/3.2/intro/tutorial01/) for now, but will evolve to something of my own. | On hold (to complex for my goals)
 [103](https://github.com/alsimoes/python-studies/tree/main/103) | Some [PyGame](https://www.pygame.org) ideia that I'm not sure yet. | Lost interest (for now)
 [104](https://github.com/alsimoes/python-studies/tree/main/104) | [Dataclasses](https://www.youtube.com/watch?v=vRVVyl9uaZc) tutorial by [ArjanCodes](https://www.youtube.com/c/ArjanCodes). | Done
-[105](https://github.com/alsimoes/python-studies/tree/main/105) | [SQLAlchemy](https://www.youtube.com/watch?v=NuDSWGOcvtg) tutorial by [I Am Data Engenier](https://www.youtube.com/channel/UClMfM7EazV2mW232-o1cqyQ) mixed with Dataclasses. | Done
+[105](https://github.com/alsimoes/python-studies/tree/main/105) | [SQLAlchemy](https://www.youtube.com/watch?v=NuDSWGOcvtg) tutorial by [I Am Data Engineer](https://www.youtube.com/channel/UClMfM7EazV2mW232-o1cqyQ) mixed with Dataclasses. | Done
